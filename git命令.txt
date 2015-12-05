@@ -1,0 +1,47 @@
+windows下使用git一些常用命令
+在本地装好git
+
+打开GitCMD
+
+cd G:/my/learngit
+
+git init
+
+git config --global user.name "myname" 
+              
+git config --global user.email "myemail@163.com"
+
+--myname 是注册github的用户名，myemail@163.com 是注册邮箱
+
+项目文件必须在G:/my/learngit下以及它的子文件夹下 
+新建一个msg.txt
+
+加入库中
+git add msg.txt
+
+git commit -m "add msg.."
+
+查看历史
+git log      
+
+打开GitBash输入命令
+ssh-keygen -t rsa -C
+在c:/users/用户名/.ssh下面 有两个秘钥文件id_rsa和id_rsa.pub
+讲id_rsa.pub的内容粘贴到登录到GitHub用户主页面的ssh keys 的key里
+，name随便写
+点击用户名后面的+新建一个repository,名字为learngit
+
+在本地GitCMD命令下
+
+关联远程库
+git remote add origin git@github.com:myname/learngit.git
+
+远程库同步到本地
+git pull git@github.com:myname/learngit.git
+
+本题库同步到gitHub
+git push origin master
+
+
+
+
