@@ -42,11 +42,9 @@ git pull git@github.com:myname/learngit.git
 本题库同步到gitHub
 git push origin master
 
-<<<<<<< HEAD
-难道。。。。
-=======
+
 origin可以换成别的名字
->>>>>>> featurel
+
 
 
 
